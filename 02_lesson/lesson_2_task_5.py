@@ -9,4 +9,11 @@ def month_to_season(month):
         return "Осень"
     else:
         return "Некорректный номер месяца"
-    
+
+# Пример использования
+
+
+month_number = 2
+
+
+print(f"Месяц{month_number}принадлежит сезону:{month_to_season(month_number)}")
