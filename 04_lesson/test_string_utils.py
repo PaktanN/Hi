@@ -1,6 +1,7 @@
 from string_utils import StringUtils
 
 # Создаем экземпляр утилит
+
 utils = StringUtils()
 
 # Тесты для метода capitalize
@@ -22,6 +23,7 @@ def test_capitalize_negative():
 
 
 # Тесты для метода trim
+
 def test_trim_positive():
     assert utils.trim("   skypro") == "skypro"
     assert utils.trim("     test string") == "test string"
@@ -37,6 +39,7 @@ def test_trim_negative():
 
 
 # Тесты для метода contains
+
 def test_contains_positive():
     assert utils.contains("SkyPro", "S") is True
     assert utils.contains("SkyPro", "k") is True
@@ -55,6 +58,7 @@ def test_contains_negative():
 
 
 # Тесты для метода delete_symbol
+
 def test_delete_symbol_positive():
     assert utils.delete_symbol("SkyPro", "k") == "SyPro"
     assert utils.delete_symbol("SkyProPro", "Pro") == "Sky"
@@ -67,4 +71,5 @@ def test_delete_symbol_negative():
     assert utils.delete_symbol("SkyPro", None) == ""
     assert utils.delete_symbol("", "a") == ""
     assert utils.delete_symbol("Test", "") == "Test"  
+
 # Удаление пустой строки не меняет
